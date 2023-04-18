@@ -13,7 +13,7 @@ function App() {
   //ip care button click function
   const getIpCare = () => {
     axios
-      .get("http://localhost:9001/ipcare")
+      .get("http://10.125.15.52:9001/ipcare")
       .then((Responce) => {
         setIpCarelist(Responce.data);
         setMarkForDischargelist([]);
@@ -29,7 +29,7 @@ function App() {
 
   const getMarkedfordischarge = () => {
     axios
-      .get("http://localhost:9001/Markedfordischarge")
+      .get("http://10.125.15.52:9001/Markedfordischarge")
       .then((Responce) => {
         setMarkForDischargelist(Responce.data);
         setIpCarelist([]);
@@ -46,7 +46,7 @@ function App() {
   //send for billing onclick function
   const getSendforbilling = () => {
     axios
-      .get("http://localhost:9001/sendforbilling")
+      .get("http://10.125.15.52:9001/sendforbilling")
       .then((response) => {
         setSendForBilling(response.data);
         setIpCarelist([]);
@@ -63,7 +63,7 @@ function App() {
 
   const getDischargeApproved = () => {
     axios
-      .get("http://localhost:9001/dischargeApproved")
+      .get("http://10.125.15.52:9001/dischargeApproved")
       .then((responce) => {
         setDischargeApproved(responce.data);
         setIpCarelist([]);
@@ -79,7 +79,7 @@ function App() {
   //admission onclick function
   const getAdmission = () => {
     axios
-      .get("http://localhost:9001/admission")
+      .get("http://10.125.15.52:9001/admission")
       .then((responce) => {
         setAdmission(responce.data);
         setIpCarelist([]);
